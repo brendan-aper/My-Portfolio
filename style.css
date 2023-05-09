@@ -57,26 +57,20 @@ nav a {
     text-decoration: none;
     color: var(--white);
 }
-.nav-right {
-    /* text-align: right; */
-}
 
 .hero {
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url(./images/new-banner.jpeg);
+    border-bottom: 4px solid;
+    border-color: var(--navy);
 }
 
 main {
     padding: 1vh 1vw;
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} */
 
 .row {
     display: flex;
@@ -107,6 +101,10 @@ main {
 
 li > a:hover {
     color:#e89317;
+}
+
+p {
+    text-indent: 1vw;
 }
 
 #work {
@@ -174,19 +172,12 @@ main a {
 }
 
 @media screen and (max-width:996px) {
-    body {
-        background-color: #f7ca2f;
-    }
     main li {
         display: inline;
         padding: 20px;
     }
 }
 @media screen and (max-width: 768px) {
-    body {
-        background-color: aqua;
-    }
-
     main li{
         padding:2px;
     }
