@@ -1,0 +1,162 @@
+:root {
+    --navy: #05294a;
+    --gold: #e89317;
+    --white: #fafcfe;
+    --yellow: #f7ca2f;
+    --blue: #145ea0;
+    --lightblue: #378bc0;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    position: relative;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+nav > ul {
+    position: absolute;
+    right: 1vw;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+.nav-right {
+    /* text-align: right; */
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/new-banner.jpeg);
+}
+
+main {
+    padding: 1vh 1vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+
+.float-left {
+    min-width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1vh;
+    padding-right: 2vw;
+    color: var(--navy);
+    font-size: 2rem;
+}
+
+.float-right {
+    min-width: 60%;
+    display: block;
+    padding: 1vh;
+    border-left: solid 4px;
+    border-color: var(--blue);
+}
+
+li > a:hover {
+    color:#e89317;
+}
+
+#work {
+    position: relative;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 3px
+}
+
+.bottom-images {
+    display:inline-flex;
+    
+}
+
+.img-html {
+    height:auto;
+    width: 100%;
+}
+
+.img-portfolio {
+    height: auto;
+    width: 100%
+}
+
+.img-study {
+    height: auto;
+    width: 100%;
+}
+
+img {
+    opacity: 1.0;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.display-title {
+    background-color: var(--gold);
+    color: var(--white);
+    padding: 1vh;
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+}
+
+main li {
+    display: inline;
+    padding: 10%;
+    line-height: 5;
+
+}
+
+main a {
+    font-size: large;
+    color: #145ea0;
+    font-weight: bold;
+    text-decoration: underline var(--blue);
+}
