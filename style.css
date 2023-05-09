@@ -1,3 +1,4 @@
+/* Color Pallette */
 :root {
     --navy: #05294a;
     --gold: #e89317;
@@ -6,7 +7,7 @@
     --blue: #145ea0;
     --lightblue: #378bc0;
 }
-
+/* Laying the foundation */
 * {
     font-family: sans-serif;
     box-sizing: border-box;
@@ -28,7 +29,7 @@ body {
 .row {
     flex: 0 0 100%;
 }
-
+/* header, nav bar, and hero img(banner) */
 header {
     height: 60px;
     width: 100%;
@@ -67,6 +68,8 @@ nav a {
     border-color: var(--navy);
 }
 
+/* main content, calling the main divs */
+
 main {
     padding: 1vh 1vw;
 }
@@ -99,13 +102,19 @@ main {
     border-color: var(--blue);
 }
 
+/* CSS hover animation */
+
 li > a:hover {
     color:#e89317;
 }
 
+/* Misc/ small rulesets */
+
 p {
     text-indent: 1vw;
 }
+
+/* work div images and positioning(really cut my teeth here) */
 
 #work {
     position: relative;
@@ -170,6 +179,10 @@ main a {
     font-weight: bold;
     text-decoration: underline var(--blue);
 }
+
+/* screen sizing media querys (im not super confident here,
+im sure theres a better way than what i did.
+as much feedback as possible would be appreciated) */
 
 @media screen and (max-width:996px) {
     main li {
